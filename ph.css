@@ -1,0 +1,211 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: darkgray;
+	background: linear-gradient(white, salmon);
+	}
+
+.top-bar  {
+	width: 100%;
+	height: 50px;
+	background: rgb(38,44,74);
+	}
+
+.top-bar p, .bottom-bar p  {
+	color: aliceblue;
+	font-size: 28px;
+	line-height: 50px;
+	margin: 0;
+	padding-left: 100px;
+			
+	}
+
+.bottom-bar p  {
+	text-align: right;
+	padding-right: 100px;
+	}
+
+.bottom-bar  {
+	width: 100%;
+	height: 50px;
+	background: #000000;
+	}
+/* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+	} 
+
+/* Style the header links */
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+     font-size: 25px;
+     font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+ .header a:hover {
+ 	   background-color: dodgerblue;
+       color: white;
+}
+
+/* Style the active/current link*/
+  .header a.active {
+  		background-color: dodgerblue;
+  		color: white;
+}
+
+/* Float the link section to the right */
+  .header-right {
+  		float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    	float: none;
+    	display: block;
+    	text-align: left;
+  }
+  .header-right {
+    	float: none;
+  }
+}
+
+		
+ .header img {
+		float: left;
+		width: 100px;
+		height: 100px;
+	
+	}		
+
+  .intra li  {
+		display: inline-block;
+		margin-right: 1em;
+	}
+		
+	.intra a  {
+		color: maroon;
+		font-size: 105%;
+		text-decoration:  none;
+	}
+		
+	.intra a:hover  {
+		text-decoration:  overline;
+	}
+		
+	.wrapper {
+		width: 900px;
+		margin: 25px auto;
+		padding: 2em;
+		background: linear-gradient(white, salmon);
+		box-shadow: 8px 7px 8px 7px rgba(0,0,0, .6);
+		float: left;
+		color: black;
+	}
+	h1 {
+		font-size: 28px;
+		  text-align: center;
+			color: aliceblue;
+	}
+			
+	p {
+		 color: white;
+	}
+	.ph h2 {
+			text-align: right;
+	}
+
+	rb .iwp,  aside  {
+			margin-top: 5px;
+			background: rgb(192,188,164);
+			padding: 3px;
+			border: solid 1px gray;
+		}
+
+	blockquote  {
+			font-style: italic;
+			font-size: 1em;
+		}
+
+
+	.wrapper  {
+			width: 1200px;
+			margin: 15px 100px;
+			padding: 3em;
+			background: brown;
+			border-radius: 100px;
+			box-shadow: 0 0 3px 2px rgba(0,0,0, .6);
+			float: right;
+		}
+		
+	main  {
+			width: 750px;
+			float: left;
+		}
+	
+
+/*Aside width to diplay YouTube Vidoe and image in block*/
+	aside .iwp {
+			width: 200px;
+			margin-top: 40px;
+			padding: 3em;
+			float: left;
+			color: white;
+			border-radius: 70px;
+		    box-shadow: 0 0 1px 1px rgba(0,0,0, .6);
+		}
+		
+			
+	aside p img  {
+			display: block;
+			margin: 0 auto;
+		
+		}
+	
+/*Footer background black, paragraph white and maroon */
+	footer {
+			clear: both;
+		}
+		
+	footer a {
+			color: maroon;
+		}
+		
+	footer a:hover {
+			text-decoration: none;
+		}
+		
+	.float-right  {
+			float: right;
+			margin-left: .4em;
+		}
+		
+	.float-left  {
+			float: left;
+			margin-right: .4em;
+		}
+	
+
+    /* Media Query--small screes, laptops*/
+
+    @media only screen and (max-width:  800px){
+        body{
+            font-size: 1.5em;
+            line-height: 1.3em;
+		}
+}

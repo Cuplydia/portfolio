@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body {
+	background-image: url("images/pic01.jpg");
+}
+.top-bar  {
+			width: 100%;
+			height: 50px;
+			background: rgb(38,44,74);
+}
+
+
+
+h1, h2 {
+	font-size: 18px;
+	color: white;
+	
+}
+
+p {
+	color: white;
+	font-size: 18px;
+}
+
+.wrapper  {
+			width: 1400px;
+			margin: 50px 15px;
+			padding: 5em;
+			background: brown;
+			border-radius:  50px;
+			box-shadow: 0 0 3px 2px rgba(0,0,0, .6);
+			float: right;
+}

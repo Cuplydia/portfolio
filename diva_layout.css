@@ -1,0 +1,290 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	
+	background-image: url("images/albums.jpg");
+}
+
+
+/*Top bar - styled with darkblue background*/
+.top-bar  {
+			width: 100%;
+			height: 50px;
+			background: rgb(38,44,74);
+}
+
+.top-bar p, .bottom-bar p  {
+			color: aliceblue;
+			font-size: 28px;
+			line-height: 50px;
+			margin: 0;
+			padding-left: 100px;
+			
+		}
+
+.bottom-bar p  {
+			text-align: right;
+			padding-right: 100px;
+		}
+
+.bottom-bar  {
+			width: 100%;
+			height: 50px;
+			background: rgb(38,44,74);
+		}
+
+
+		
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: #858585;
+  padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link*/
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+	box-shadow: 8px;
+
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #eddd;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+		
+.header img {
+	float: left;
+	width: 100px;
+	height: 100px;
+	
+	
+	
+}
+  .intra li  {
+	display: inline-block;
+	margin-right: 1em;
+	font-size: 1.5em;
+	margin: 80px 105px;
+	  border-bottom: double	#800000;  
+		}
+/*Bottom hover*/
+.bottom {
+	color: maroon;
+			font-size: 105%;
+			text-decoration:  none;
+}
+
+.bottom a {
+	
+	        color: maroon;
+			font-size: 105%;
+			text-decoration:  none;
+}
+
+.bottom a:hover  {
+	text-decoration:  overline;
+}
+		
+  .intra a  {
+			color: maroon;
+			font-size: 105%;
+			text-decoration:  none;
+		}
+		
+  .intra a:hover  {
+			text-decoration:  overline;
+		}
+
+
+/*Headers*/
+	h1 {
+			font-size: 28px;
+		    text-align: center;
+			color: aliceblue;
+			background-color: darkblue;
+		}
+		
+	h2 {
+			font-size: 30px;
+		
+		}
+		
+	h3 {
+			font-size: 21px;
+		
+		}
+		
+    h2, h3  {
+		color: maroon;
+		font-family: cardo;
+		font-style: normal;
+		font-weight: 400;
+		text-shadow: 0px 0px 1px rgba(0,0,0,.8);
+		}
+
+	img .ph, .sm, .lf {
+		box-shadow: 8px;
+		border: 2px;
+	}
+
+.ph h2,.sm h2 {
+			text-align: left;
+}
+
+.vw h2, .lf h2 {
+	text-align: right;
+}
+.rb  {
+			text-align: justify;
+		}
+
+.rb a  {
+			color: maroon;
+			font-style: normal;
+			display: block;
+			margin-top: 7px;
+			text-shadow: 3em;
+}
+
+.ph a, .sm a {
+			margin-left: -35px;
+		}
+
+.rb .iwp aside  {
+			margin-top: 5px;
+			background: rgb(192,188,164);
+			padding: 3px;
+			border: solid 1px gray;
+}
+
+blockquote  {
+			font-style: italic;
+			font-size: 1em;
+		}
+
+	
+	.wrapper  {
+			width: 1200px;
+			margin: 0 auto;
+			padding: 2em;
+			background: antiquewhite;
+			box-shadow: 0 0 3px 2px rgba(0,0,0, .6);
+		}
+		
+	main  {
+			width: 750px;
+			float: left;
+		}
+/*Aside image & interview with Phyllis*/		
+	aside .iwp {
+			width: 400px;
+			margin-top: 40px;
+			padding: 1em 1em 1em .7em;
+			float: right;
+			background: rgb(38,44,74);
+		  	color: white;
+			border-radius: 15px;
+		    box-shadow: 0 0 1px 1px rgba(0,0,0, .6);
+		}
+	
+aside .smm  {
+			width: 150px;
+			margin-top: 40px;
+			padding: 1em 1em 1em .7em;
+			float: right;
+			background: rgb(38,44,74);
+		  	color: white;
+			border-radius: 15px;
+		    box-shadow: 0 0 1px 1px rgba(0,0,0, .6);
+		}
+aside, nav, .center {
+	text-align: center;
+	color: white;
+	
+}
+
+
+aside h3  {
+			color: white;
+			text-align: center;
+		}
+		
+				
+		aside p img  {
+			display: block;
+			margin: 0 auto;
+		}
+		
+		footer {
+			clear: both;
+		}
+		
+		footer a {
+			color: maroon;
+		}
+		
+		footer a:hover {
+			text-decoration: none;
+		}
+		
+		.float-right  {
+			float: right;
+			margin-left: .4em;
+		}
+		
+			.float-left  {
+			float: left;
+			margin-right: .4em;
+		}
+	
+
+    /* Media Query--small screes, laptops*/
+
+    @media only screen and (max-width:  800px){
+        body{
+            font-size: 1.5em;
+            line-height: 1.3em;
+		}
+}
+		

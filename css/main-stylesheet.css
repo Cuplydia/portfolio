@@ -1,0 +1,1078 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+
+@font-face {
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url(https://fonts.gstatic.com/s/leaguespartan/v5/kJEnBuEW6A0lliaV_m88ja5Twtx8BWhtkDVmjZvM_oTZA81bNA6MzbxG.woff) format('woff');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+:root {
+    --hero-text-color: white;
+    --hero-gradient-color: #f2d57e;
+    --hero-bg-color: #f1ac7e;
+    --nav-bg-color: #e99b65;
+    --landing-image: url('../images/landing-image-no-bg.png');
+   
+    --panel-color: #f0f0f0;
+    --text-color: #555;
+    --accent-color: #e57b30;
+    --link-color: #0182ab;
+    --badge-color: #f1ac7e;
+
+    --font-family-header: 'League Spartan', sans-serif;
+    --font-family-body: 'Open Sans', sans-serif;
+    --font-family-quote: 'Playfair Display', serif;
+    --badge-size: 9rem;
+    --main-text-size: 3rem;
+    --top-text-size: 1.5rem;
+    --bottom-text-size: 1.6rem;
+}
+
+
+body * {
+    box-sizing: border-box;
+}
+
+.btn-tester {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: var(--hero-text-color);
+    /* background: var(--hero-bg-color); */
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.btn-tester span {
+    width: 150px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+.btn-tester button {
+    border-color: transparent;
+    background: transparent;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    margin: 0px 5px;
+    color: var(--hero-text-color);
+    background: var(--hero-bg-color);
+}
+.btn-tester button:hover {
+    background: var(--hero-text-color);
+    color: var(--hero-bg-color);
+}
+
+
+body {
+    font-family: var(--font-family-body);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+p, li {
+    color: var();
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+p:first-child {
+    margin-top: 0;
+}
+
+a, a:link, a:visited, a:active {
+    text-decoration: none;
+    color: var(--link-color);
+    font-weight: bold;
+}
+a:hover {
+    color: var(--accent-color); 
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+h1, h2, h3, h4 {
+    font-family: var(--font-family-header);
+}
+
+.section {
+    padding: 10vh 15vw;
+}
+
+h2 {
+    /* font-size: 2.4em; */
+    font-size: 3em;
+    margin-bottom: 5vh;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+
+
+/*****************
+ Laciasha's CSS
+******************/
+
+#hero {
+    color: var(--hero-text-color);
+    font-family: var(--font-family-header);
+    margin: 0px;
+}
+.top {
+    font-size: 3vw;
+    font-weight: bold;
+    font-family: var(--font-family-header);
+    text-transform: uppercase;
+}
+
+#hero {
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        ". landing quote .";
+    background-repeat: no-repeat;
+    grid-template-columns: 10% 35% 40% 10%;
+    background-color: var(--hero-gradient-color) !important;
+    background: radial-gradient(circle at 0% 100%, var(--hero-gradient-color) 0%, var(--hero-bg-color) 50%);
+    /* background-color: var(--hero-gradient-color) !important;
+    background: linear-gradient(90deg, var(--hero-gradient-color) 0%, var(--hero-bg-color) 28%); */
+    overflow: hidden;
+    transition: all 0.5 ease-in;
+}
+
+#hero .kl-img {
+    filter: saturate(0.7);
+    align-self: flex-end;
+    max-height: 86vh;
+    grid-area: landing;
+}
+
+
+.waviy span, 
+#hero .quote h1,
+#hero .quote h2 {
+    text-shadow: 2px 2px 3px #986C4F;
+}
+
+#hero .quote {
+    /* border: solid 1px black; */
+    /* max-width: 380px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 180px;
+    grid-area: quote;
+    /* opacity: 0; */
+}
+
+.quote h1 {
+    font-size: 2.4em;
+    line-height: 1.1em;
+    margin: 0;
+    text-align: center;
+}
+
+.quote h2 {
+    font-size: 2.0em;
+    line-height: 1.1em;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+h2 { 
+    font-style:normal;  
+}
+
+
+/***************
+ Janice Form
+ ***************/
+.submitbtn{
+    margin-top: 10px;
+}
+
+#contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#contact label {
+    color: var(--hero-text-color);
+    font-weight: 700;
+    margin-bottom: 3px;
+    font-size: 1.1em;
+}
+
+.contact-form{
+    background-color: var(--hero-bg-color);
+    padding: 30px;
+    width: 100%;
+}
+.form-annotation {
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.form-annotation h2 {
+    font-size: 3em;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.form-annotation p {
+    margin-top: 0;
+    /* font-size: 1.5em; */
+}
+
+input, textarea{
+    width: 100%; 
+    height: 40px;
+}
+select {
+    width: 100%; 
+    height: 40px;
+}  
+
+
+#about-business{
+    height: 150px;
+}
+label{
+    padding-top: 10px;
+    display: inline-block;
+    padding-bottom: 2px;
+}
+
+/***************
+ Janice Speaking
+ ***************/
+
+#speaking {
+    background-color: var(--panel-color);
+    margin: 0;
+}
+
+#speaking p {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+#speaking h2 {
+    margin-top: 0px;
+}
+#speaking h3 {
+    margin-bottom: 5px;
+}
+
+.speaking-summary {
+    display: grid;
+    grid-template-columns: 300px auto;
+    column-gap: 50px;
+}
+.speaking-summary img {
+    width: 100%;
+}
+/* .speaking-summary > .summary-text {
+    margin-left: 30px;
+} */
+.speaking-summary > .summary-text p:first-child {
+    margin-top: 0;
+}
+
+#about {
+    background-color: var(--panel-color);
+    margin: 0;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+#about p:first-child {
+    margin-top: 0;
+}
+
+.row {
+    display: grid;
+    margin-bottom: 50px;
+    grid-template-columns: 150px auto;
+    align-items: flex-start;
+}
+.screenshot {
+    width: 150px;
+    margin-right: 15px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--panel-color);
+}
+.screenshot img {
+    width: 100%;
+}
+.description {
+    padding-left: 20px;
+}
+.description h3 {
+    margin-top: 0px;
+}
+
+
+/*******************
+ Genevieve
+ *******************/
+
+.opener-right, 
+.opener-left {
+    display: grid;
+    align-items: center;
+    column-gap: 50px;
+    /* border: solid 1px #000; */
+}
+
+.opener-left {
+    margin: 15vh 15vw 15vh 15vw;
+    grid-template-columns: 1fr 2fr;
+}
+
+.opener-right {
+    margin: 0vh 15vw 15vh 15vw;
+    grid-template-columns: 2fr 1fr;
+}
+
+.flare-1, .flare-2 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    /* border: solid 1px #000; */
+    height: 150px
+}
+.flare-1 {
+    background-position: left;
+    background-image: url(../images/square-circle-left.png);
+}
+
+.flare-2 {
+    background-position: right;
+    background-image: url(../images/square-circle-right.png);
+}
+
+
+
+.opener-left strong,
+.opener-right strong,
+#bio strong {
+    color: #e57b30;
+}
+
+.opener-right p,
+.opener-left p {
+    margin-top: 0;
+}
+.opener-left h2,
+.opener-right h2 {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 70px;
+    margin-top: 60px;
+}
+.flex-container > div {
+    justify-content: flex-start;
+    /* border: solid 1px #000; */
+}
+.bg-image {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    width: 18vw;
+    height: 18vw;
+    margin-bottom: 20px;
+    transition: background-size 1s ease-in; 
+}
+.bg-image.services {
+    background-image: url('../images/dei-services-thumb.png');
+}
+.bg-image.services::before {
+    content: '';
+    background-image: url('../images/hex-dots.png');
+    width: 14vw;
+    height: 14vw;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: -10vw;
+    top: -3vw;
+    z-index: -1;
+}
+
+.btn-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.mobile-asset {
+    display: none;
+}
+.bg-image:hover {
+    background-size: 105% 105%;
+}
+.bg-image.principles {
+    background-image: url('../images/guiding-principles-thumb.jpg');
+    filter: saturate(1.5);
+}
+.bg-image.expertise {
+    background-image: url('../images/expertise-img-thumb.png');
+}
+.bg-image.expertise::before {
+    content: '';
+    background-image: url('../images/triangle-dots.png');
+    width: 13vw;
+    height: 13vw;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 10.5vw;
+    top: 12vw;
+    z-index: -1;
+}
+
+
+img.guiding-principles {
+    width: 100%;
+}
+img.services {
+    width: 125%;
+    margin-left: -60px;
+}
+img.expertise {
+    width: 125%;
+    margin-right: -60px;
+    margin-top: 40px;
+}
+.hex, .ct {
+    width: 123px;
+    margin-top: -124px;
+    z-index: -1;
+    align-self: flex-end;
+    left: 59px;
+    position: relative;
+}
+
+#services h3 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+#services p {
+    font-size: 0.95em;
+}
+
+.guiding-principles, .services, .expertise {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.flex-container h2 {
+    padding-top: 10px;
+}
+
+.flex-container p {
+    margin-top: 0px;
+}
+
+button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 9px 20px;
+    font-size: 16px;
+    text-align: center;
+    transition: all 0.2s ease-in;
+    border: solid 2px black;
+}
+button.menu-button {
+    color: #fff;
+}
+
+button.close {
+    border: 0px;
+}
+
+button:hover {
+    background: black;
+    color: var(--hero-text-color);
+}
+
+
+
+/*****************
+ Gillian
+ *****************/
+
+.photo-container {
+    display: flex;
+    column-gap: 100px; 
+}
+#bio {
+    background: var(--panel-color);
+}
+#bio h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+  
+.bio_pic, .u-turn-asset {
+    width: 25vw; 
+}
+
+
+/**********
+ Anita
+ **********/
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+}
+.grid-item, .grid-item-2, .grid-item-3 {
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 140px;
+    margin-top: 10px;
+}
+.grid-item,
+.grid-item-2,
+.grid-item-3 {
+    width: 25%;
+}
+
+.grid-item img {
+    width: 75%;
+    /* filter: grayscale(1); */
+}
+
+.grid-item-2 img, .grid-item-3 img {
+    width: 80%;
+}
+
+
+/*******************/
+/* Laciesha Footer */
+/*******************/
+.top-return {
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.top-return button {
+    width: 50%;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #444;
+}
+footer a, footer a:link, footer a:visited {
+    margin: 20px;
+    color: var(--hero-text-color);
+    font-size: 50px;
+}
+footer a:hover {
+    color: #0182ab;
+}
+
+
+/************************
+ Sarah's CSS
+*************************/
+#experience {
+    height: auto;
+    min-height: auto;
+}
+#quote2 {
+    background-color: var(--panel-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#quote2 p {
+    font-size: 2.5em;
+    color: var(--link-color);
+    /* margin: 10vh 0; */
+    font-family: var(--font-family-header);
+    text-align: center;
+    line-height: 1.2em;
+    max-width: 65vw;
+}
+
+.quote-symbol {
+    font-size: 80px;
+    font-family: var(--font-family-quote);
+    position: relative;
+    position: relative;
+    left: -4px;
+    top: 35px;
+    width: 0;
+} 
+
+#quote2 .quote-symbol {
+    font-size: 120px;
+    top: 55px;
+}
+
+
+@media screen and (max-width: 930px) {
+    /***********/
+    /* Landing */
+    /***********/
+    #hero {
+        grid-template-columns: 5% 50% 40% 5%;
+    }
+
+    #hero .quote {
+        margin-top: 0;
+    }
+
+    #hero .kl-img {
+        max-height: 96vh;
+    }
+    .quote h1 { font-size: 2.0em; }
+    .quote h2 { font-size: 1.8em; }
+
+    section#testimonials h2 {
+        display: none;
+    }
+
+    .speaking-summary .pic {
+        display: none;
+    }
+
+    /************/
+    /* Services */
+    /************/
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .flex-container h3 {
+        margin: 10px 0px;
+    }
+
+    .flex-container > div {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 70px;
+    }
+
+    .flex-container .bg-image {
+        display: none;
+    }
+    .mobile-asset {
+        display: inline-block;
+        width: 100px;
+    } 
+    .mobile-asset.smaller {
+        width: 80px;
+        margin-right: 10px;
+    } 
+
+
+    /*********/
+    /* Logos */
+    /*********/
+    .grid-item,
+    .grid-item-2,
+    .grid-item-33 {
+        width: 50%;
+    }
+
+     /***********/
+    /* Contact */
+    /***********/
+
+    .u-turn-asset {
+        display: none;
+    }
+    #quote2 p {
+        max-width: 100%;
+    }
+    #contact {
+        display: flex;
+        flex-direction: column;
+    }
+    #contact .form-annotation {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    /***********/
+    /* General */
+    /***********/
+    .section {
+        padding: 10vh 5vw;
+    }
+
+    .speaking-summary .pic {
+        display: none;
+    }
+
+    /***********/
+    /* Landing */
+    /***********/
+    /* #hero {
+        background-image: var(--landing-image);
+        background-size: cover;
+        background-position-x: center;
+    } */
+
+    .logo { display: none; }
+    .mobile.quote {
+        width: 100%;
+        max-width: 100%;
+        padding: 40px;
+        color: #0182ab;
+        font-family: var(--font-family-header);
+        background: var(--panel-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 225px;
+        /* opacity: 0; */
+    }
+    .desktop { display: none !important; }
+    .mobile { display: inherit; }
+    .waviy span, 
+    #hero .quote h1,
+    #hero .quote h2 {
+        text-shadow: none;
+    }
+
+    /****************/
+    /* What I offer */
+    /****************/
+    #overview {
+        padding: 0vh 5vw;
+    }
+    .opener-left {
+        display: flex;
+        flex-direction: column;
+    }
+    .opener-left h2,
+    .opener-right h2  {
+        text-align: left;
+        align-self: flex-start;
+    }
+    
+    .opener-right {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0vh 5vw 0vh 5vw;
+    }
+
+    .flare-1, .flare-2 {
+        margin-bottom: 40px;
+    }
+
+    /************/
+    /* Speaking */
+    /************/
+    #speaking {
+        padding: 0 0 10vh 0;
+    }
+    .speaking-summary {
+        display: flex;
+        flex-direction: column;
+    }
+    .speaking-summary > .summary-text {
+        padding: 10vh 5vw 0 5vw;
+        margin-left: 0;
+    }
+
+    /*********/
+    /* Logos */
+    /*********/
+    .grid-item,
+    .grid-item-2,
+    .grid-item-33 {
+        width: 33%;
+    }
+
+    .grid-item img,
+    .grid-item-2 img,
+    .grid-item-33 img {
+        width: 70%;
+    }
+
+    /*********************/
+    /* About the Founder */
+    /*********************/
+    #bio {
+        padding: 0 0 10vh 0;
+    }
+    #bio .text {
+        padding: 10vh 5vw;
+    }
+    .photo-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .photo-container .pic {
+        background-image: url(../images/khalilahbluedress.jpg);
+        background-size: contain;
+        width: 90vw;
+        height: 40vh;
+        min-height: 300px;
+        background-attachment: fixed;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-position-y: 62px;
+        /* border: solid 1px #000; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .photo-container .bio_pic {
+        /* width: 100%; */
+        display: none;
+    }
+}
+
+@media screen 
+    and (max-width: 600px)
+    and (orientation: portrait)
+    and (min-height: 400px) {
+      
+    #hero {
+        height: 65vh;
+        grid-template-areas:
+            ". landing .";
+        background-color: var(--hero-bg-color) !important;
+        background-repeat: no-repeat;
+        grid-template-columns: 20% 80% 10%;
+    }
+
+    .btn-tester {
+        bottom: 29vh;
+    }
+
+    #hero .kl-img {
+        max-height: 60vh;
+    }
+    
+    .speaking-summary .pic {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    
+    
+    .mobile.quote {
+        height: 220px;
+    }
+    .quote h1 { font-size: 1.8em; }
+    .quote h2 { font-size: 1.6em; }
+
+    /*********/
+    /* Logos */
+    /*********/
+    .grid-item,
+    .grid-item-2,
+    .grid-item-33 {
+        width: 50%;
+    }
+
+    .grid-item img,
+    .grid-item-2 img,
+    .grid-item-33 img {
+        width: 80%;
+    }
+}
+
+
+/**************/
+/* Animations */
+/**************/
+
+@media screen and (min-width: 1000px) {
+
+    /* General Rules */
+    .scroll-element {
+        opacity: 0;
+        transition-delay: 0s;
+        transition-property: all;
+        transition-duration: 1s;
+        transition-timing-function: ease-in;
+    }
+
+    .scroll-element.scrolled {
+        opacity: 1;
+    }
+
+    /* 1. Bio */
+    .scroll-element.pic.bio {
+        left: 50px;
+        position: relative;
+    }
+
+    .scroll-element.text {
+        left: -50px;
+        position: relative;
+    }
+
+    .scroll-element.pic.bio.scrolled,
+    .scroll-element.text.scrolled {
+        left: 0px;
+    }
+
+    /* 2. Services */
+    .scroll-element.services,
+    .scroll-element.guiding-principles,
+    .scroll-element.expertise {
+        position: relative;
+    }
+
+    .scroll-element.services {
+        left: -50px;
+    }
+    .scroll-element.guiding-principles {
+        padding-top: 50px;
+    }
+    .scroll-element.expertise {
+        left: 50px;
+    }
+
+    .scroll-element.services.scrolled,
+    .scroll-element.guiding-principles.scrolled,
+    .scroll-element.expertise.scrolled {
+        top: 0px;
+        left: 0px;
+        padding-top: 0px;
+    }
+
+    /* 3. Speaking */
+    .scroll-element.pic.speaking {
+        /* transform: rotate(-5deg); */
+        position: relative;
+        left: -50px;
+    }
+    .scroll-element.summary-text {
+        position: relative;
+        left: 50px;
+    }
+
+    .pic.speaking.scrolled,
+    .summary-text.scrolled {
+        /* transform: rotate(0deg); */
+        left: 0;
+    }
+
+    /* 4. Client Logos */
+    .grid-item.scrolled, 
+    .grid-item-2.scrolled, 
+    .grid-item-3.scrolled {
+        margin-top: 0px;
+    }
+}
+
+/* Logo */
+.waviy {
+    display: flex;
+    position: relative;
+    font-family: var(--font-family-header);
+}
+.waviy span {
+    overflow: hidden;
+    /* border: solid 1px #000; */
+    position: relative;
+    display: inline-block;
+    font-size: 45px;
+    font-weight: bold;
+    color: var(--hero-text-color);
+    margin: 0px;
+    animation: flip 2s forwards;
+    animation-delay: calc(.07s * var(--i));
+}
+
+/* .waviy span.flip-me {
+    animation: flip 2s forwards;
+    animation-delay: 1.5s; 
+}
+.waviy span.shrink-me-1 {
+    animation: shrink-1 1s  ease-out forwards;
+    animation-delay: 3.5s;   
+}
+.waviy span.shrink-me-2 {
+    animation: shrink-2 1s ease-out forwards;
+    animation-delay: 3.5s;   
+} */
+
+@keyframes flip {
+    0%,60% {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes shrink-1 {
+    0% {
+        opacity: 1;
+        max-width: 60px;
+    }
+    100% {
+        opacity: 0;
+        max-width: 0.5px;
+    }
+}
+@keyframes shrink-2 {
+    0% {
+        opacity: 1;
+        max-width: 60px;
+    }
+    100% {
+        opacity: 0;
+        max-width: 1.5px;
+    }
+}
+
+
+/* Quote at Top */
+@keyframes fadein-quote {
+    0% {
+        margin-top: 100px;
+        opacity: 0;
+    }
+    100% {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+/* .quote {
+    animation: fadein-quote 0.5s ease-in-out 0.5s forwards;
+} */
